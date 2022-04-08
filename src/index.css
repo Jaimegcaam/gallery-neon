@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap");
+
+* {
+}
+
+@font-face {
+  font-family: "humblle";
+  src: url("./fonts/Humblle\ Rought\ Caps.ttf");
+}
+
+h1 {
+  font-family: "Passions Conflict", cursive;
+}
+
+h2 {
+  font-family: "humblle";
+}
+
+h3 {
+  font-family: "Palette Mosaic", cursive;
+}
