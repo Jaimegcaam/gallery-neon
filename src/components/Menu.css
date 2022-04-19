@@ -21,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
   transform: rotateX(-10deg) rotateY(20deg);
 }
 .Menu-list-item {
@@ -54,6 +55,14 @@ body {
   height: 49%;
   transition: all 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
 }
+
+
+@media (max-width: 475px) {
+  .Menu-list-item{
+    font-size: 50px;
+  }
+}
+
 .Mask span {
   display: block;
 }
@@ -65,7 +74,7 @@ body {
   transform: translateY(-49%);
 }
 .Menu-list-item:hover .Mask, .Menu-list-item:active .Mask {
-  color: #ecbb1b ;
+  color: black ;
   transform: skewX(12deg) translateX(5px);
 }
 .Menu-list-item:hover .Mask + .Mask, .Menu-list-item:active .Mask + .Mask {

@@ -60,12 +60,20 @@ body{
     left: 30px;
   }
   
-
   .slide-text h2 span{
     font-size: 40px;
     top: 20px;
   }
 }
+
+
+@media (max-width: 475px) {
+  .swiper-slide{
+    width: 270px;
+    height: 180px;
+  }
+}
+
 
 .swiper-slide:nth-child(1) .slide-img{
   background-image: url('../assets/neon1.jpeg');

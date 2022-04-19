@@ -7,7 +7,7 @@ import heroVid from './assets/fire.mp4';
 function App() {  
 
   return (
-    <div>
+    <div className="bg-black flex-wrap flex">
       <video
                 className="object-cover h-[100vh] w-full absolute z-05"
                 src={heroVid}

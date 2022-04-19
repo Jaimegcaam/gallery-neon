@@ -22,35 +22,28 @@ function Menu({state}){
     })
 
     return (
-        <div ref={el => (menu = el)} className="w-full h-full text-white absolute  left-0 flex justify-center text-center z-20">
-            <video
-                className="object-cover h-[100vh] w-full absolute z-05"
-                ref ={videoRef}
-                onCanPlay={() => setPlayBack()}
-                src={video}
-                autoPlay
-                loop
-                muted
-            /> 
+        <div ref={el => (menu = el)} className="w-full h-full bg-[#ecbb1b] text-white absolute  left-0 flex justify-center text-center z-10">
             <div className="Menu">
                 <ul className="Menu-list" data-offset="10">
-                    <li className="Menu-list-item" data-offset="20" >
-                        Home
-                        <span className="Mask"><span>Home</span></span>
-                        <span className="Mask"><span>Home</span></span>
-                    </li>
-                    <li className="Menu-list-item" data-offset="16" >
+                    <li className="Menu-list-item" data-offset="12" >
                         Portfolio
                         <span className="Mask"><span>Portfolio</span></span>
                         <span className="Mask"><span>Portfolio</span></span>
                     </li>
-                    <li className="Menu-list-item" data-offset="12" >
-                        <a href="https://github.com/Jaimegcaam/gallery-neon" target="blank">
+                    <a href="https://github.com/Jaimegcaam/gallery-neon" target="blank">
+                        <li className="Menu-list-item" data-offset="12" >
                             Code
                             <span className="Mask"><span>Code</span></span>
                             <span className="Mask"><span>Code</span></span>
-                        </a>
-                    </li>
+                        </li>
+                    </a>
+                    <a href="https://github.com/Jaimegcaam" target="blank">
+                        <li className="Menu-list-item" data-offset="12" >
+                            Github
+                            <span className="Mask"><span>Github</span></span>
+                            <span className="Mask"><span>Github</span></span>
+                        </li>
+                    </a>
                     <li className="Menu-list-item" data-offset="8">
                         Contact
                         <span className="Mask"><span>Contact</span></span>
