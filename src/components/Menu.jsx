@@ -1,16 +1,8 @@
 import React, {useEffect, useRef} from "react";
 import './Menu.css';
-import video from '../assets/puntos.mp4'
 
 function Menu({state}){
-
-
-    const videoRef= useRef();
   
-    const setPlayBack = () => {
-        videoRef.current.playbackRate = 0.8;
-    };
-
     let menu = useRef(null);
 
     useEffect(() =>{
@@ -22,33 +14,37 @@ function Menu({state}){
     })
 
     return (
-        <div ref={el => (menu = el)} className="w-full h-full bg-[#ecbb1b] text-white absolute  left-0 flex justify-center text-center z-10">
+        <div ref={el => (menu = el)} className="w-full h-full text-[white] absolute  left-0 flex justify-center text-center z-20 bg-[#A83236]">
             <div className="Menu">
                 <ul className="Menu-list" data-offset="10">
-                    <li className="Menu-list-item" data-offset="12" >
-                        Portfolio
-                        <span className="Mask"><span>Portfolio</span></span>
-                        <span className="Mask"><span>Portfolio</span></span>
-                    </li>
-                    <a href="https://github.com/Jaimegcaam/gallery-neon" target="blank">
+                    <a target="blank">
                         <li className="Menu-list-item" data-offset="12" >
-                            Code
-                            <span className="Mask"><span>Code</span></span>
-                            <span className="Mask"><span>Code</span></span>
+                            Home
+                            <span className="Mask"><span>Home</span></span>
+                            <span className="Mask"><span>Home</span></span>
                         </li>
                     </a>
-                    <a href="https://github.com/Jaimegcaam" target="blank">
+                    <a target="blank">
+                        <li className="Menu-list-item" data-offset="12" >
+                            Portfolio
+                            <span className="Mask"><span>Portfolio</span></span>
+                            <span className="Mask"><span>Portfolio</span></span>
+                        </li>
+                    </a>
+                    <a href="https://github.com/Jaimegcaam/gallery-neon" target="blank">
                         <li className="Menu-list-item" data-offset="12" >
                             Github
                             <span className="Mask"><span>Github</span></span>
                             <span className="Mask"><span>Github</span></span>
                         </li>
                     </a>
-                    <li className="Menu-list-item" data-offset="8">
-                        Contact
-                        <span className="Mask"><span>Contact</span></span>
-                        <span className="Mask"><span>Contact</span></span>
-                    </li>
+                    <a target="blank">
+                        <li className="Menu-list-item" data-offset="12" >
+                            Contact
+                            <span className="Mask"><span>Contact</span></span>
+                            <span className="Mask"><span>Contact</span></span>
+                        </li>
+                    </a>
                 </ul>
             </div>
         </div>

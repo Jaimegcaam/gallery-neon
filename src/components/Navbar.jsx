@@ -53,7 +53,7 @@ function Navbar(){
                 </div>
 
                 {/* Logo Navbar */}
-                <h1 className="m-7 text-[#ecbb1b] font-bold text-base z-10 sm:text-3xl">NEON</h1>
+                <h1 className="m-7 text-[#ecbb1b] font-bold text-base z-20 sm:text-3xl">NEON</h1>
 
                 <button disabled={disable} onClick={menuHandler} className='cursor-pointer'>
                     {state.clicked ? (
