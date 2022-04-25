@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import {AiOutlineMenu, AiOutlineGithub, AiOutlineLinkedin, AiOutlineMail, AiOutlineClose} from 'react-icons/ai'
 import Menu from "./Menu";
+import { Link } from "react-router-dom";
 
 function Navbar(){
 
@@ -47,9 +48,9 @@ function Navbar(){
                     <a  className="z-10 text-base sm:text-lg" href="https://github.com/Jaimegcaam" target="blank">
                         <AiOutlineGithub/>
                     </a>
-                    <a  className="z-10 text-base sm:text-lg" target="blank">
+                    <Link to="/contact"  className="z-10 text-base sm:text-lg">
                         <AiOutlineMail />
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Logo Navbar */}
