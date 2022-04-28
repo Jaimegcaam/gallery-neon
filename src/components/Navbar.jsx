@@ -10,10 +10,7 @@ function Navbar(){
         menuName: "Menu"
     });
 
-    const [disable, setDisabled] = useState(false);
-
     function menuHandler() {
-        disableHandler();
         if(state.clicked === true){
             setState({
                 clicked: false,
@@ -29,12 +26,6 @@ function Navbar(){
         }
     }
 
-    const disableHandler = () =>{
-        setDisabled(!disable);
-        setTimeout(() => {
-            setDisabled(false);
-        }, 1200);
-    };
 
     return (
         <div className="w-full h-[10vh] text-white">
@@ -56,7 +47,7 @@ function Navbar(){
                 {/* Logo Navbar */}
                 <h1 className="m-7 text-[#ecbb1b] font-bold text-base z-20 sm:text-3xl">NEON</h1>
 
-                <button disabled={disable} onClick={menuHandler} className='cursor-pointer'>
+                <button onClick={menuHandler} className='cursor-pointer'>
                     {state.clicked ? (
                         <div className="m-7 flex space-x-4">
                             <h3 className="text-base z-30 sm:text-lg" >MENU</h3>
